@@ -3,11 +3,11 @@ import { FaPlus } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <div className="bg-white shadow-sm">
+    <div className="bg-white shadow-md">
       <div className="w-11/12 mx-auto flex justify-between items-center py-4">
         <h2 className="font-bold text-[24px]">CS — Ticket System</h2>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4">
           <ul className="menu menu-horizontal px-1">
             <li>
               <a>Home</a>
@@ -28,7 +28,7 @@ const Navbar = () => {
               <a>Contact</a>
             </li>
           </ul>
-          <button className="px-4 py-2 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-md">
+          <button className="px-4 py-2 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:from-[#7B49F5] hover:to-[#B37CFF] rounded-md">
             <p className="flex items-center gap-2 text-white">
               <FaPlus />
               New Ticket
