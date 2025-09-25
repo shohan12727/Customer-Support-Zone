@@ -1,0 +1,21 @@
+<div className=" shadow-sm">
+      <div className="w-11/12 mx-auto flex justify-between items-center py-4">
+        <div>
+          <h2 className="font-bold text-[24px]">CS — Ticket System</h2>
+        </div>
+        <div className="flex gap-5 items-center">
+          <p>Home</p>
+          <p>FAQ</p>
+          <p>Changelog</p>
+          <p>Blog</p>
+          <p>Download</p>
+          <p>Contact</p>
+          <button className="px-4 py-2 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-md">
+            <p className="flex items-center gap-2 text-white">
+              <FaPlus />
+              New Ticket
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "#10001",
+    "title": "Login Issue",
+    "description": "User is unable to login to the system.",
+    "customer": "King Shohan",
+    "priority": "High Priority",
+    "status": "In-Progress",
+    "createdAt": "01/15/2024"
+  },
+  {
+    "id": "#10002",
+    "title": "Payment Failure",
+    "description": "Payment gateway failed during transaction.",
+    "customer": "Queen Zara",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "02/14/2024"
+  },
+  {
+    "id": "#10003",
+    "title": "Page Not Loading",
+    "description": "Web page not loading properly on browser.",
+    "customer": "Lady Hania",
+    "priority": "Low Priority",
+    "status": "In-Progress",
+    "createdAt": "02/15/2024"
+  },
+  {
+    "id": "#10004",
+    "title": "Data Sync Error",
+    "description": "Data synchronization is not working correctly.",
+    "customer": "King Shohan",
+    "priority": "Low Priority",
+    "status": "In-Progress",
+    "createdAt": "01/21/2024"
+  },
+  {
+    "id": "#10005",
+    "title": "Account Locked",
+    "description": "Customer account has been locked due to multiple attempts.",
+    "customer": "Queen Zara",
+    "priority": "High Priority",
+    "status": "In-Progress",
+    "createdAt": "01/22/2024"
+  },
+  {
+    "id": "#10006",
+    "title": "Email Not Received",
+    "description": "User did not receive email notification.",
+    "customer": "Lord Ayaan",
+    "priority": "Low Priority",
+    "status": "Open",
+    "createdAt": "01/18/2024"
+  },
+  {
+    "id": "#10007",
+    "title": "App Crash",
+    "description": "Application crashes on startup.",
+    "customer": "Prince Rayyan",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "02/05/2024"
+  },
+  {
+    "id": "#10008",
+    "title": "Feature Request",
+    "description": "Customer requested new feature implementation.",
+    "customer": "Queen Zara",
+    "priority": "Low Priority",
+    "status": "In-Progress",
+    "createdAt": "01/29/2024"
+  },
+  {
+    "id": "#10009",
+    "title": "Slow Performance",
+    "description": "System performance is very slow.",
+    "customer": "Lady Hania",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "02/10/2024"
+  },
+  {
+    "id": "#10010",
+    "title": "UI Bug",
+    "description": "UI bug reported on dashboard screen.",
+    "customer": "King Shohan",
+    "priority": "Low Priority",
+    "status": "In-Progress",
+    "createdAt": "01/12/2024"
+  },
+  {
+    "id": "#10011",
+    "title": "Notification Error",
+    "description": "Notifications are not being sent correctly.",
+    "customer": "Lord Ayaan",
+    "priority": "Low Priority",
+    "status": "Open",
+    "createdAt": "01/24/2024"
+  },
+  {
+    "id": "#10012",
+    "title": "File Upload Issue",
+    "description": "File upload functionality is failing.",
+    "customer": "Prince Rayyan",
+    "priority": "High Priority",
+    "status": "In-Progress",
+    "createdAt": "02/01/2024"
+  },
+  {
+    "id": "#10013",
+    "title": "Report Generation Failed",
+    "description": "Report generation is not completing successfully.",
+    "customer": "Queen Zara",
+    "priority": "Low Priority",
+    "status": "Open",
+    "createdAt": "01/30/2024"
+  },
+  {
+    "id": "#10014",
+    "title": "Integration Error",
+    "description": "Integration with third-party API is failing.",
+    "customer": "King Shohan",
+    "priority": "High Priority",
+    "status": "In-Progress",
+    "createdAt": "02/03/2024"
+  },
+  {
+    "id": "#10015",
+    "title": "Security Alert",
+    "description": "Suspicious login detected in the system.",
+    "customer": "Lady Hania",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "01/20/2024"
+  }
+]
