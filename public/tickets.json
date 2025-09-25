@@ -2,7 +2,7 @@
   {
     "id": "#10001",
     "title": "Login Issue",
-    "description": "User is unable to login to the system.",
+    "description": "User is unable to login to the system despite entering correct credentials, possibly due to session or authentication errors.",
     "customer": "King Shohan",
     "priority": "High Priority",
     "status": "In-Progress",
@@ -11,7 +11,7 @@
   {
     "id": "#10002",
     "title": "Payment Failure",
-    "description": "Payment gateway failed during transaction.",
+    "description": "Payment gateway failed during transaction, resulting in the customer's payment not being processed and causing a failed order.",
     "customer": "Queen Zara",
     "priority": "High Priority",
     "status": "Open",
@@ -20,7 +20,7 @@
   {
     "id": "#10003",
     "title": "Page Not Loading",
-    "description": "Web page not loading properly on browser.",
+    "description": "Web page is not loading properly on browser, likely due to network issues or server response errors.",
     "customer": "Lady Hania",
     "priority": "Low Priority",
     "status": "In-Progress",
@@ -29,7 +29,7 @@
   {
     "id": "#10004",
     "title": "Data Sync Error",
-    "description": "Data synchronization is not working correctly.",
+    "description": "Data synchronization between the client and server is failing, leading to inconsistencies in the displayed information.",
     "customer": "King Shohan",
     "priority": "Low Priority",
     "status": "In-Progress",
@@ -38,7 +38,7 @@
   {
     "id": "#10005",
     "title": "Account Locked",
-    "description": "Customer account has been locked due to multiple attempts.",
+    "description": "Customer account has been locked due to multiple failed login attempts, requiring verification to regain access.",
     "customer": "Queen Zara",
     "priority": "High Priority",
     "status": "In-Progress",
@@ -47,7 +47,7 @@
   {
     "id": "#10006",
     "title": "Email Not Received",
-    "description": "User did not receive email notification.",
+    "description": "User did not receive email notification, possibly due to spam filters, server delays, or incorrect email configuration.",
     "customer": "Lord Ayaan",
     "priority": "Low Priority",
     "status": "Open",
@@ -56,7 +56,7 @@
   {
     "id": "#10007",
     "title": "App Crash",
-    "description": "Application crashes on startup.",
+    "description": "Application crashes on startup, potentially caused by corrupted files, memory issues, or unhandled exceptions in code.",
     "customer": "Prince Rayyan",
     "priority": "High Priority",
     "status": "Open",
@@ -65,7 +65,7 @@
   {
     "id": "#10008",
     "title": "Feature Request",
-    "description": "Customer requested new feature implementation.",
+    "description": "Customer requested new feature implementation to enhance the user experience and provide additional functionality.",
     "customer": "Queen Zara",
     "priority": "Low Priority",
     "status": "In-Progress",
@@ -74,7 +74,7 @@
   {
     "id": "#10009",
     "title": "Slow Performance",
-    "description": "System performance is very slow.",
+    "description": "System performance is very slow, causing delays in operations and affecting overall user experience.",
     "customer": "Lady Hania",
     "priority": "High Priority",
     "status": "Open",
@@ -83,7 +83,7 @@
   {
     "id": "#10010",
     "title": "UI Bug",
-    "description": "UI bug reported on dashboard screen.",
+    "description": "UI bug reported on dashboard screen, leading to misalignment or incorrect display of visual components.",
     "customer": "King Shohan",
     "priority": "Low Priority",
     "status": "In-Progress",
@@ -92,7 +92,7 @@
   {
     "id": "#10011",
     "title": "Notification Error",
-    "description": "Notifications are not being sent correctly.",
+    "description": "Notifications are not being sent correctly, resulting in users missing important alerts and system updates.",
     "customer": "Lord Ayaan",
     "priority": "Low Priority",
     "status": "Open",
@@ -101,7 +101,7 @@
   {
     "id": "#10012",
     "title": "File Upload Issue",
-    "description": "File upload functionality is failing.",
+    "description": "File upload functionality is failing, preventing users from uploading important documents or media files.",
     "customer": "Prince Rayyan",
     "priority": "High Priority",
     "status": "In-Progress",
@@ -110,7 +110,7 @@
   {
     "id": "#10013",
     "title": "Report Generation Failed",
-    "description": "Report generation is not completing successfully.",
+    "description": "Report generation is not completing successfully, causing incomplete or missing reports for end-users.",
     "customer": "Queen Zara",
     "priority": "Low Priority",
     "status": "Open",
@@ -119,7 +119,7 @@
   {
     "id": "#10014",
     "title": "Integration Error",
-    "description": "Integration with third-party API is failing.",
+    "description": "Integration with third-party API is failing, preventing seamless data exchange and impacting system functionality.",
     "customer": "King Shohan",
     "priority": "High Priority",
     "status": "In-Progress",
@@ -128,7 +128,7 @@
   {
     "id": "#10015",
     "title": "Security Alert",
-    "description": "Suspicious login detected in the system.",
+    "description": "Suspicious login detected in the system, potentially indicating unauthorized access or a security breach attempt.",
     "customer": "Lady Hania",
     "priority": "High Priority",
     "status": "Open",

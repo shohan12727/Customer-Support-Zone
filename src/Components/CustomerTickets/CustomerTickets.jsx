@@ -1,0 +1,29 @@
+import React, { use } from "react";
+import CustomerTicket from "../CustomerTicket/CustomerTicket";
+
+const CustomerTickets = ({ ticketsPromise }) => {
+  const customerTickets = use(ticketsPromise);
+
+  return (
+    <div className="bg-[#F5F5F5]">
+      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-4 gap-5">
+        <div className="col-span-3">
+          <h2 className="text-xl font-bold mb-2">Customer Tickets</h2>
+          <div className="col-span-3 grid gied-cols-1 md:grid-cols-2  gap-3">
+            {customerTickets.map((ticket) => (
+              <CustomerTicket key={ticket.id} ticket={ticket}></CustomerTicket>
+            ))}
+          </div>
+        </div>
+
+        {/* summary part  */}
+
+        <div className="col-span-1">
+          <h2 className="text-xl font-bold mb-2">Task Status</h2>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CustomerTickets;
