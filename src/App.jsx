@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import CustomerTickets from "./Components/CustomerTickets/CustomerTickets";
@@ -8,15 +9,22 @@ const fetchingTickets = async () => {
   return result.json();
 };
 
-const ticketsPromise = fetchingTickets(); 
-
+const ticketsPromise = fetchingTickets();
 
 function App() {
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-      <CustomerTickets ticketsPromise={ticketsPromise}></CustomerTickets>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center w-full">
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+        }
+      >
+        <CustomerTickets ticketsPromise={ticketsPromise}></CustomerTickets>
+      </Suspense>
     </>
   );
 }
