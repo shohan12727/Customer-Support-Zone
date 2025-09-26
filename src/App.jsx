@@ -4,6 +4,7 @@ import Banner from "./Components/Banner/Banner";
 import CustomerTickets from "./Components/CustomerTickets/CustomerTickets";
 import Navbar from "./Components/Navbar/Navbar";
 import { ToastContainer } from "react-toastify";
+import Footer from "./Components/Footer/Footer";
 
 const fetchingTickets = async () => {
   const result = await fetch("/tickets.json");
@@ -44,6 +45,7 @@ function App() {
           ticketsPromise={ticketsPromise}
         ></CustomerTickets>
       </Suspense>
+      <Footer></Footer>
       <ToastContainer />
     </>
   );

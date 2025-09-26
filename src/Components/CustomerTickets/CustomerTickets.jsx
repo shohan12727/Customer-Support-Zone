@@ -31,7 +31,7 @@ const CustomerTickets = ({
 
   return (
     <div className="bg-[#F5F5F5]">
-      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-4 gap-5">
+      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 pb-4 md:pb-10">
         <div className="col-span-3">
           <h2 className="text-xl font-bold mb-2">Customer Tickets</h2>
           <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 gap-3">
