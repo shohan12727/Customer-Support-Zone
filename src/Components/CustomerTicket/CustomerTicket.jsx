@@ -34,7 +34,9 @@ const CustomerTicket = ({ ticket, handleCardClick }) => {
       <div className="flex text-[#627382]  items-center justify-between text-sm">
         <div className="flex gap-2">
           <h2>{id}</h2>
-          <h2>{priority}</h2>
+          <h2
+          className={` font-semibold uppercase ${priority == "High Priority" ? "text-[#F83044]": "text-[#FEBB0C]" }`}
+          >{priority}</h2>
         </div>
         <div className="flex gap-3">
           <h2>{customer}</h2>

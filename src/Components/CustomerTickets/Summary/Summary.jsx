@@ -1,14 +1,25 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const Summary = ({ ticket, summary, setSummary }) => {
-  // Function to remove ticket from summary
-  //   const handleRemoveTicket = (ticketId) => {
-  //     const updatedSummary = summary.filter(item => item.id !== ticketId);
-  //     setSummary(updatedSummary);
-  //   };
-
+const Summary = ({
+  ticket,
+  summary,
+  setSummary,
+  resolvedCount,
+  setResolvedCount,
+  progressCount,
+  setProgressCount,
+  setCompletedTicketIds,
+  setResolved,
+}) => {
   const handleCompleteBtn = () => {
-    alert("completed");
+    // alert("completed");
+    toast.success("Completed!!");
+    setResolvedCount(resolvedCount + 1);
+    setProgressCount(progressCount - 1);
+    setSummary(summary.filter((item) => item.id !== ticket.id));
+    setCompletedTicketIds((prev) => [...prev, ticket.id]);
+    setResolved((prev) => [...prev, ticket]);
   };
 
   return (

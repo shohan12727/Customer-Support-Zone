@@ -2,8 +2,7 @@ import React from "react";
 import vector1 from "../../assets/vector1.png";
 import vector2 from "../../assets/vector2.png";
 
-
-const Banner = ({progressCount}) => {
+const Banner = ({ progressCount, resolvedCount }) => {
   const vector1Style = {
     background: `linear-gradient(to right, #632EE3, #9F62F2)`,
     backgroundSize: "cover",
@@ -76,7 +75,7 @@ const Banner = ({progressCount}) => {
             />
             <div className="relative z-10 p-6 flex flex-col justify-center items-center">
               <h1 className="text-white text-2xl font-bold">Resolved</h1>
-              <h1 className="text-white text-4xl font-bold">0</h1>
+              <h1 className="text-white text-4xl font-bold">{resolvedCount}</h1>
             </div>
           </div>
         </div>

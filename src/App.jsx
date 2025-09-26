@@ -1,8 +1,9 @@
-import { Suspense, useState} from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import CustomerTickets from "./Components/CustomerTickets/CustomerTickets";
 import Navbar from "./Components/Navbar/Navbar";
+import { ToastContainer } from "react-toastify";
 
 const fetchingTickets = async () => {
   const result = await fetch("/tickets.json");
@@ -12,14 +13,18 @@ const fetchingTickets = async () => {
 const ticketsPromise = fetchingTickets();
 
 function App() {
-
-  const [summary, setSummary] =  useState([]);
-   const [progressCount, setProgressCount] = useState(0);
+  const [summary, setSummary] = useState([]);
+  const [progressCount, setProgressCount] = useState(0);
+  const [resolved, setResolved] = useState([]);
+  const [resolvedCount, setResolvedCount] = useState(0);
 
   return (
     <>
       <Navbar></Navbar>
-      <Banner progressCount={progressCount}></Banner>
+      <Banner
+        progressCount={progressCount}
+        resolvedCount={resolvedCount}
+      ></Banner>
       <Suspense
         fallback={
           <div className="flex justify-center items-center w-full">
@@ -27,8 +32,19 @@ function App() {
           </div>
         }
       >
-        <CustomerTickets progressCount={progressCount} setProgressCount={setProgressCount} summary={summary} setSummary={setSummary} ticketsPromise={ticketsPromise}></CustomerTickets>
+        <CustomerTickets
+          setResolved={setResolved}
+          resolved={resolved}
+          setResolvedCount={setResolvedCount}
+          resolvedCount={resolvedCount}
+          progressCount={progressCount}
+          setProgressCount={setProgressCount}
+          summary={summary}
+          setSummary={setSummary}
+          ticketsPromise={ticketsPromise}
+        ></CustomerTickets>
       </Suspense>
+      <ToastContainer />
     </>
   );
 }
