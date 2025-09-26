@@ -62,6 +62,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+   <p className="text-center text-white border-t border-gray-600 py-5">© 2025 CS — Ticket System. All rights reserved.</p>
+
+
     </div>
   );
 };
