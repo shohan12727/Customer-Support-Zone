@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState} from "react";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import CustomerTickets from "./Components/CustomerTickets/CustomerTickets";
@@ -12,10 +12,14 @@ const fetchingTickets = async () => {
 const ticketsPromise = fetchingTickets();
 
 function App() {
+
+  const [summary, setSummary] =  useState([]);
+   const [progressCount, setProgressCount] = useState(0);
+
   return (
     <>
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Banner progressCount={progressCount}></Banner>
       <Suspense
         fallback={
           <div className="flex justify-center items-center w-full">
@@ -23,7 +27,7 @@ function App() {
           </div>
         }
       >
-        <CustomerTickets ticketsPromise={ticketsPromise}></CustomerTickets>
+        <CustomerTickets progressCount={progressCount} setProgressCount={setProgressCount} summary={summary} setSummary={setSummary} ticketsPromise={ticketsPromise}></CustomerTickets>
       </Suspense>
     </>
   );

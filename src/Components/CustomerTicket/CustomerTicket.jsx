@@ -1,16 +1,28 @@
 import React from "react";
 import { SlCalender } from "react-icons/sl";
-const CustomerTicket = ({ ticket }) => {
-  console.log(ticket);
+const CustomerTicket = ({ ticket, handleCardClick }) => {
+  // console.log(ticket);
   const { id, title, description, customer, priority, status, createdAt } =
     ticket;
+  const handleCard = () => {
+    
+    handleCardClick && handleCardClick(ticket);
+  };
 
   return (
-    <div className="card_div  bg-white p-3 rounded-sm">
+    <div onClick={handleCard} className="card_div  bg-white p-3 rounded-sm">
       <div className="flex justify-between items-center">
         <h2 className="font-semibold">{title}</h2>
-        <p className="bg-[#B9F8CF] rounded-xl  px-2 py-1">
-          <span className="bg-[#02A53B] rounded-full h-3 w-3 inline-block"></span>{" "}
+        <p
+          className={`rounded-xl  px-2 py-1 ${
+            status === "Open" ? "bg-[#B9F8CF]" : "bg-[#F8F3B9]"
+          }`}
+        >
+          <span
+            className={`${
+              status === "Open" ? "bg-[#02A53B]" : "bg-[#FEBB0C]"
+            } rounded-full h-3 w-3 inline-block mr-2`}
+          ></span>
           {status}
         </p>
       </div>
